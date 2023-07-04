@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ekran{
+    width: 100%;
+    height: 100vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.kalla{
+    width: 100px;
+    height: 100px;
+    background: black;
+    position: absolute;
+    border-radius: 50%;
+    top: 200px;
+}
+.tana{
+    width: 130px;
+    height: 230px;
+    border-radius: 70px;
+    background: black;
+    top: 290px;
+    position: absolute;
+}
+.cap{
+    width: 30px;
+    height: 110px;
+    background:black;
+    position: absolute;
+    border-radius: 20px;
+    top: 310px;
+    left: 685px;
+    transform: rotate(25deg);
+}
+.ong{
+    width: 30px;
+    height: 110px;
+    background:black;
+    position: absolute;
+    border-radius: 20px;
+    top: 310px;
+    right: 685px;
+    transform: rotate(-25deg);
+}
+.left{
+    width: 35px;
+    height: 170px;
+    background:black;
+    position: absolute;
+    border-radius: 20px;
+    bottom: 170px;
+    left: 710px;
+    transform: rotate(5deg);
+}
+.ekran:hover .left{
+    animation:  oyoq alternate 0.5s ease-in-out infinite;
+}
+@keyframes oyoq{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(35deg);
+    }
+}
+.left>div{
+    width: 50px;
+    height: 30px;
+    background: black;
+    border-radius: 20px 0px  0 20px ;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+}
+.right{
+    width: 35px;
+    height: 170px;
+    background:black;
+    position: absolute;
+    border-radius: 20px;
+    bottom: 170px;
+    right: 710px;
+    transform: rotate(-5deg);
+}
+.right>div{
+    width: 50px;
+    height: 30px;
+    background: black;
+    border-radius: 20px 0px  0 20px ;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+}
+.top{
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 610px;
+    bottom: 210px;
+    border: 5px solid black;
+}
+.ekran:hover .top{
+ animation:  topku alternate 0.5s ease-in-out infinite;
+}
+@keyframes topku{
+    0%{
+        transform: translateY(35px);
+    }
+    100%{
+        transform: translateY(-100px);
+    }
+ }

@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::selection{
+  background: red;
+  color: red;
+}
+.ekran {
+  width: 100%;
+  height: 100vh;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.rasmlar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50px;
+}
+.rasm {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  transition: all 3s ease-in-out;
+}
+.ikki {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50px;
+}
+.imga {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  transition: all 3s ease-in-out;
+}
+.rasmcha {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50px;
+  transition: all 3s ease-in-out;
+}
+
+.rasmku {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  transition: all 3s ease-in-out;
+}
+.ekran:hover .rasmku {
+  transform: translateY(450px) rotate(360deg);
+  border: double 10px white;
+}
+.ekran:hover .imga {
+  transform: translateY(225px) rotate(720deg);
+  border: double 10px white;
+}
+.ekran:hover .rasm {
+  transform: rotate(1080deg);
+  border: double 10px white;
+}

@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.ekran {
+  width: 100%;
+  height: 100vh;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.kalla {
+  width: 100px;
+  height: 100px;
+  background: black;
+  position: absolute;
+  border-radius: 50%;
+  top: 200px;
+  right: 100px;
+}
+.tana {
+  width: 130px;
+  height: 230px;
+  border-radius: 70px;
+  background: black;
+  top: 290px;
+  position: absolute;
+  right: 85px;
+}
+.cap {
+  width: 30px;
+  height: 110px;
+  background: black;
+  position: absolute;
+  border-radius: 20px;
+  top: 310px;
+  transform: rotate(-25deg);
+  right: 60px;
+}
+.ong {
+  width: 30px;
+  height: 110px;
+  background: black;
+  position: absolute;
+  border-radius: 20px;
+  top: 310px;
+  right: 685px;
+  transform: rotate(25deg);
+  right: 205px;
+}
+.left {
+  width: 35px;
+  height: 170px;
+  background: black;
+  position: absolute;
+  border-radius: 20px;
+  bottom: 170px;
+  left: 1310px;
+  transform: rotate(5deg);
+}
+.ekran:hover .left {
+  animation: oyoq alternate 0.9s ease-in-out infinite;
+}
+@keyframes oyoq {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(35deg);
+  }
+}
+.left > div {
+  width: 50px;
+  height: 30px;
+  background: black;
+  border-radius: 20px 0px 0 20px;
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+}
+.right {
+  width: 35px;
+  height: 170px;
+  background: black;
+  position: absolute;
+  border-radius: 20px;
+  bottom: 170px;
+  right: 80px;
+  transform: rotate(-5deg);
+}
+.right > div {
+  width: 50px;
+  height: 30px;
+  background: black;
+  border-radius: 20px 0px 0 20px;
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+}
+
+.kallasi {
+  width: 100px;
+  height: 100px;
+  background: black;
+  position: absolute;
+  border-radius: 50%;
+  top: 200px;
+  left: 100px;
+}
+.tanasi {
+  width: 130px;
+  height: 230px;
+  border-radius: 70px;
+  background: black;
+  top: 290px;
+  position: absolute;
+  left: 85px;
+}
+.capi {
+  width: 30px;
+  height: 110px;
+  background: black;
+  position: absolute;
+  border-radius: 20px;
+  top: 310px;
+  left: 685px;
+  transform: rotate(25deg);
+  left: 65px;
+}
+.ongi {
+  width: 30px;
+  height: 110px;
+  background: black;
+  position: absolute;
+  border-radius: 20px;
+  top: 310px;
+  right: 685px;
+  transform: rotate(-25deg);
+  left: 205px;
+}
+.lefti {
+  width: 35px;
+  height: 170px;
+  background: black;
+  position: absolute;
+  border-radius: 20px;
+  bottom: 170px;
+  left: 710px;
+  transform: rotate(5deg);
+  left: 80px;
+}
+.ekran:hover .righti {
+  animation: oyoqi alternate 0.9s ease-in-out infinite;
+}
+@keyframes oyoqi {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-35deg);
+  }
+}
+.lefti > div {
+  width: 50px;
+  height: 30px;
+  background: black;
+  border-radius: 0px 20px 20px 0px;
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+}
+.righti {
+  width: 35px;
+  height: 170px;
+  background: black;
+  position: absolute;
+  border-radius: 20px;
+  bottom: 170px;
+  right: 710px;
+  transform: rotate(-5deg);
+  left: 190px;
+}
+.righti > div {
+  width: 50px;
+  height: 30px;
+  background: black;
+  border-radius: 0px 20px 20px 0px;
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+}
+.top {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  bottom: 170px;
+  left: 260px;
+  border: 5px solid black;
+}
+.ekran:hover .top{
+  animation: topi alternate 1s ease-in-out infinite;
+  position: absolute;
+}
+
+@keyframes topi{
+  0% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(930px);
+  }
+}
